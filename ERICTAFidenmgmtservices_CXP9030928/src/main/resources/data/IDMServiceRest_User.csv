@@ -1,0 +1,2 @@
+username,firstName,lastName,email,password,enabled,roles
+IdentityManagementServices_Skyfall_fieldtechtestinguser11,fieldTechTestUser1,smith,fieldTechTestUser11@example.com,TestPassw0rd,true,SECURITY_ADMIN

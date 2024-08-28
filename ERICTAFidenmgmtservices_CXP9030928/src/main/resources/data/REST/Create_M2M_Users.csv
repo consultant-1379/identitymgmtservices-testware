@@ -1,0 +1,12 @@
+context,userName,groupName,homeDir,validDays,expectedHttpStatus,userState,developerMessage
+1,IdentityMgmt_Skyfall_fred,mm-smrsusers,/home/IdentityManagementServices_Skyfall_fred,60,200,IDMS_USER_EXISTING,
+2,IdentityMgmt_Skyfall_radhika,smrsgroup,/home/IdentityManagementServices_Skyfall_radhika,100,422,,"Problem adding user"
+3,"IdentityMgmt_Skyfall_12@1234",0,/home/IdentityManagementServices_Skyfall_12@1234,0,422,,"Problem adding user"
+4,IdentityMgmt_Skyfall_george,mm-smrsusers,home/IdentityManagementServices_Skyfall_george,123456,200,IDMS_USER_EXISTING,
+5,IdentityMgmt_Skyfall_gary,NULL,/home/IdentityManagementServices_Skyfall_gary,0,422,,"Problem adding user"
+6,IdentityMgmt_Skyfall_ed1234,mm-smrsusers,/home/IdentityManagementServices_Skyfall_ed,0,200,IDMS_USER_EXISTING,
+
+7,IdentityMgmt_Skyfall_fred,mm-smrsusers,/home/IdentityManagementServices_Skyfall_fred,60,422,,"already exists"
+8,IdentityMgmt_Skyfall_paul,mm-smrsusers,/home/Skyfall_group,60,200,IDMS_USER_EXISTING,
+
+9,IdentityMgmt_Skyfall_marie,mm-smrsusers,/home/Skyfall_group,60,200,IDMS_USER_EXISTING,

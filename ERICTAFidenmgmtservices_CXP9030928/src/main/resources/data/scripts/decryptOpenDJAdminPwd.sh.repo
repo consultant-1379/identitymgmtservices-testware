@@ -1,0 +1,13 @@
+#!/bin/bash
+
+GLOBAL_PROPERTY_FILE=/ericsson/tor/data/global.properties
+. $GLOBAL_PROPERTY_FILE
+
+OPENDJ_PASSKEY=/ericsson/tor/data/idenmgmt/opendj_passkey
+DM_PWD=ldapadmin
+
+if [ -r "${OPENDJ_PASSKEY}" ]; then
+  DM_PWD=`echo ${LDAP_ADMIN_PASSWORD} | openssl enc -a -d -aes-128-cbc -salt -kfile ${OPENDJ_PASSKEY}`
+fi
+
+echo $DM_PWD

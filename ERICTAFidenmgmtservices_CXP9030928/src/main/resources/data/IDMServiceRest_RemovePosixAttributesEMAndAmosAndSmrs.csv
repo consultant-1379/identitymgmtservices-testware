@@ -1,0 +1,4 @@
+step,command,args,expectedOut,timeout
+Remove posixAttribute with correct attributes for EM,curl,"-b COOKIE_FILE --insecure -X DELETE ""https://HTTPD_HOST_NAME/idmservice/people/IdentityManagementServices_Skyfall_fieldtechtestinguser11/posixattributes?groupname=element-manager_users""",Conflict,10000
+Remove posixAttribute with correct attributes for Amos,curl,"-b COOKIE_FILE --insecure -X DELETE ""https://HTTPD_HOST_NAME/idmservice/people/IdentityManagementServices_Skyfall_fieldtechtestinguser11/posixattributes?groupname=amos_users""",Conflict,10000
+Remove posixAttribute with correct attributes for Smrs,curl,"-b COOKIE_FILE --insecure -X DELETE ""https://HTTPD_HOST_NAME/idmservice/people/IdentityManagementServices_Skyfall_fieldtechtestinguser11/posixattributes?groupname=mm-smrsusers""",OK,10000

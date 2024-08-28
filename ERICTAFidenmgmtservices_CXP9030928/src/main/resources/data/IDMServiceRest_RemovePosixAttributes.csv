@@ -1,0 +1,4 @@
+step,command,args,expectedOut,timeout
+Remove posixAttribute with correct attributes,curl,"-b COOKIE_FILE  --insecure -X DELETE ""https://HTTPD_HOST_NAME/idmservice/people/IdentityManagementServices_Skyfall_fieldtechtestinguser11/posixattributes?groupname=mm-smrsusers""",OK,10000
+Remove posixAttribute with correct attributes twice,curl,"-b COOKIE_FILE --insecure -X DELETE ""https://HTTPD_HOST_NAME/idmservice/people/IdentityManagementServices_Skyfall_fieldtechtestinguser11/posixattributes?groupname=mm-smrsusers""",Conflict,10000
+Remove posixAttribute with invalid user,curl,"-b COOKIE_FILE --insecure -X DELETE ""https://HTTPD_HOST_NAME/idmservice/people/IdentityManagementServices_Skyfall_fieldtechtestuserinvalid/posixattributes?groupname=mm-smrsusers""",Not Found,10000

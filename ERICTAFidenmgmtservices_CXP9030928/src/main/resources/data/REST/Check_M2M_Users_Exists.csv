@@ -1,0 +1,9 @@
+context,userName,expectedHttpStatus,userState
+1,IdentityMgmt_Skyfall_fred,200,IDMS_USER_EXISTING
+2,IdentityMgmt_Skyfall_radhika,200,IDMS_USER_DELETED
+3,"IdentityMgmt_Skyfall_12@1234",200,IDMS_USER_DELETED
+4,IdentityMgmt_Skyfall_george,200,IDMS_USER_EXISTING
+5,IdentityMgmt_Skyfall_ed1234,200,IDMS_USER_EXISTING
+6,IdentityMgmt_Skyfall_paul,200,IDMS_USER_EXISTING
+7,IdentityMgmt_Skyfall_marie,200,IDMS_USER_EXISTING
+

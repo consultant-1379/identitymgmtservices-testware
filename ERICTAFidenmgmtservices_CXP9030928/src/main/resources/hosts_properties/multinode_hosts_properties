@@ -1,0 +1,50 @@
+# This file can be used to run TAF against a physical 2 nodes if its cluster information is missing in CI Portal
+# at https://cifwk-oss.lmera.ericsson.se/dmt/clusters/
+# If physical node has clusterId assigned and registered in CI Portal, then run the command below
+#    mvn clean install -Dtaf.clusterId=<clusterId>
+# If not,
+# Replace hosts.properties file ( ../taf_properties/hosts.properties) to this one
+# Check the host configuration(/etc/hosts) below on the lab and update them if they are different:
+#    host.sc1.ip =
+#    host.sc1.node.internal_secserv_su0.ip =
+#    host.sc2.ip =
+#    host.sc2.node.internal_secserv_su1.ip =
+# And execute mvn command to run TAF with this file:
+#    mvn clean install
+
+deployment.type=multinode
+
+host.sc1.ip = 10.59.132.20
+host.sc1.user.root.pass = litpc0b6lEr
+host.sc1.user.root.type = ADMIN
+host.sc1.port.rmi=4447
+host.sc1.port.jmx=9999
+host.sc1.type = SC1
+host.sc1.port.ssh=22
+
+host.sc1.node.internal_secserv_su0.tunnel = 1
+host.sc1.node.internal_secserv_su0.port.rmi = 4447
+host.sc1.node.internal_secserv_su0.port.jmx = 9999
+host.sc1.node.internal_secserv_su0.type = JBOSS
+host.sc1.node.internal_secserv_su0.ip = 192.168.85.19
+host.sc1.node.internal_secserv_su0.port.https = 8443
+host.sc1.node.internal_secserv_su0.user.guest.pass=guestp
+host.sc1.node.internal_secserv_su0.user.guest.type=OPER
+
+host.sc2.ip = 10.59.132.185
+host.sc2.user.root.pass = litpc0b6lEr
+host.sc2.user.root.type = ADMIN
+host.sc2.port.rmi=4447
+host.sc2.port.jmx=9999
+host.sc2.port.ssh=22
+host.sc2.type=SC2
+
+host.sc2.node.internal_secserv_su1.tunnel = 2
+host.sc2.node.internal_secserv_su1.port.rmi = 4447
+host.sc2.node.internal_secserv_su1.port.jmx = 9999
+host.sc2.node.internal_secserv_su1.ip = 192.168.85.20
+host.sc2.node.internal_secserv_su1.port.https = 8443
+host.sc2.node.internal_secserv_su1.type = JBOSS
+host.sc2.node.internal_secserv_su1.user.guest.pass=guestp
+host.sc2.node.internal_secserv_su1.user.guest.type=OPER
+

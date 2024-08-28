@@ -1,0 +1,2 @@
+type,name,description,status,policy,assignedRoles
+custom,Security-Com-AA_Info_role,Custom Role IdentityMgmt_REST_TEST,ENABLED,"{""identitymgmt_settings_taf"": [""read"", ""execute"", ""update"", ""delete""]}",

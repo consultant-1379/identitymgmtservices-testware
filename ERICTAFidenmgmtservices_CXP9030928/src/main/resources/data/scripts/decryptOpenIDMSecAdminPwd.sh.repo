@@ -1,0 +1,14 @@
+#!/bin/bash
+
+GLOBAL_PROPERTY_FILE=/ericsson/tor/data/global.properties
+. $GLOBAL_PROPERTY_FILE
+
+SECADMIN_PASSKEY=/ericsson/tor/data/idenmgmt/secadmin_passkey
+
+SECADMIN_PWD=TestPassw0rd
+
+if [ -r "${SECADMIN_PASSKEY}" ]; then
+   SECADMIN_PWD=`echo ${default_security_admin_password} | openssl enc -a -d -aes-128-cbc -salt -kfile ${SECADMIN_PASSKEY}`
+fi
+
+echo $SECADMIN_PWD

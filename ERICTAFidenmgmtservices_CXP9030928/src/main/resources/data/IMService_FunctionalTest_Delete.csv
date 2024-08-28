@@ -1,0 +1,6 @@
+userName,expected
+IdentityManagementServices_Skyfall_fred,true
+NULL,false
+IdentityManagementServices_Skyfall_george,true
+IdentityManagementServices_Skyfall_john,false
+IdentityManagementServices_Skyfall_ed1234,true

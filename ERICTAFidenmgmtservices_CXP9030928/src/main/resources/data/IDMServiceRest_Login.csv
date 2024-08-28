@@ -1,0 +1,3 @@
+step,host,command,args,timeout
+Login and obtain cookie to access openIDM,sc2,curl,"-c COOKIE_FILE --insecure -X POST ""https://HTTPD_HOST_NAME/login?IDToken1=administrator&IDToken2=TestPassw0rd""",10000
+Login and obtain cookie to access openIDM,sc1,curl,"-c COOKIE_FILE --insecure -X POST ""https://HTTPD_HOST_NAME/login?IDToken1=administrator&IDToken2=TestPassw0rd""",10000

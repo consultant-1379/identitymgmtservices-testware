@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Identity Management Services - Skyfall">
+    <test name="IDMServiceFunctionalTest" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.IMService_FunctionalTest">
+                <methods>
+                    <!--<include name="verifyValidM2MUserCanSftpToSc" />-->
+                    <include name="GetAllTargetGroups" />
+                    <include name="GetDefaultTargetGroup" />
+                    <include name="GetValidTargetGroup" />
+                    <include name="cleanUpM2MUser" />
+                    <include name="createM2MUser" />
+                    <include name="checkM2MUserExistence" />
+                    <include name="getM2MUser" />
+                    <include name="getM2MPassword" />
+                    <include name="updateM2MPassword" />
+                    <include name="deleteM2MUser" />
+                    <include name="createProxyAgent" />
+                    <include name="deleteProxyAgent" />
+                </methods>
+            </class>
+            <class name="com.ericsson.nms.security.taf.test.cases.IDMServiceRestTest">
+                <methods>
+                    <include name="loginToENM" />
+                    <include name="createUser" />
+                    <include name="verifyAddPosixAttributes" />
+                    <include name="verifyRemovePosixAttributes" />
+                    <include name="verifyAddPosixAttributesAmosAndEM" />
+                    <include name="verifyRemovePosixAttributesAmosAndEM" />
+                    <include name="verifyAddPosixAttributesSmrsAndAmosAndEM" />
+                    <include name="verifyRemovePosixAttributesEMAndAmosAndSmrs" />
+                    <include name="deleteUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

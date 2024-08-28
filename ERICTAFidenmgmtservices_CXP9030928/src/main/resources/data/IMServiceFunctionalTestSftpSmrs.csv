@@ -1,0 +1,6 @@
+nodeHost,userGroup,smrsAccountName,smrsHomeDirectory,validTime,result
+sc1,mm-smrsusers,idmts-mm-lran-backup,/home/smrs/smrsroot/licence/,60,true
+sc1,mm-smrsusers,idmts-mm-lran-laad,/home/smrs/smrsroot/licence/,60,true
+sc1,mm-smrsusers,idmts-mm-lran-certificates,/home/smrs/smrsroot/licence/,60,true
+sc1,mm-smrsusers,idmts-mm-lran-software,/home/smrs/smrsroot/licence/,60,true
+sc1,mm-smrsusers,idmts-mm-lran-licence,/home/smrs/smrsroot/licence/,60,true

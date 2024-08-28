@@ -1,0 +1,21 @@
+context,userName,groupName,homeDir,validDays,expectedHttpStatus,developerMessage,role
+
+##CREATE m2m user
+1,IdentityMgmt_Skyfall_fred,mm-smrsusers,/home/IdentityManagementServices_Skyfall_fred,60,422,"Access control decision: denied",
+
+#CHECK/GET/DELETE m2m user - GET/UPDATE m2m user password -
+2,IdentityMgmt_Skyfall_fred,,,,422,"Access control decision: denied",
+
+#Create/Delete Proxy Agent
+3,,,,,422,"Access control decision: denied",
+
+#check ENM user has Com Role
+4,IdentityMgmt1_Skyfall_ComRole,,,,422,"Access control decision: denied"," ** ENM user should have a ComRole"
+
+
+
+
+
+
+
+

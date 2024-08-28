@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="COM AA Info - Skyfall">
+    <test name="ComAAInfoRest" preserve-order="true">
+        <classes>
+            <class
+                name="com.ericsson.nms.security.taf.test.cases.ComAaInfoTestREST">
+            </class>
+        </classes>
+    </test>
+</suite>

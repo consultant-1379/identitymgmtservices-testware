@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Identity Management Services - Skyfall">
+    <test name="IMService_FunctionalTestRest" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.taf.test.cases.IMService_FunctionalTestRest">
+            </class>
+        </classes>
+    </test>
+</suite>

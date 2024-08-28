@@ -1,0 +1,2 @@
+context,username,firstName,lastName,email,password,enabled,roles,authMode
+1,ComAaInfoTest_Functional,ComAaInfoTest_Functional,ComAaInfoTest_Functional,test@administor.com,TestPassw0rd,true,"ADMINISTRATOR,Security-Com-AA_Info_role",local

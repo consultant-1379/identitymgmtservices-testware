@@ -1,0 +1,5 @@
+context,userName,expectedHttpStatus,comUserGroup,role
+1,IdentityMgmt1_Skyfall_ComRole,200,true," ** ENM user should have a ComRole"
+2,IdentityMgmt2_Skyfall_ComRole,200,true," ** ENM user should have a ComRole"
+3,IdentityMgmt_Skyfall_NO_ComRole,200,false," ** ENM user should NOT have a ComRole"
+4,IdentityMgmt_Skyfall_NONexistent,200,false," ** NON Existent ENM user"

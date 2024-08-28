@@ -1,0 +1,60 @@
+# Compiled source #
+*.class
+*/bin/*
+
+# Eclipse files
+.project
+.classpath
+.settings
+.metadata
+.eclipse-pmd
+
+# IntelliJ IDEA files
+.idea
+*.iws
+*.ipr
+*.iml
+
+# Test output files
+*/test-output/*
+/test-output/
+/test-output
+test-output/
+test-output/**/*
+*/test-output/**/*
+
+# Packages
+*.jar
+*.war
+*.ear
+*.tar
+
+# Maven build files
+target
+target/
+reports
+application.properties
+avs-rest-service/application.properties
+
+# PMD
+.pmd
+
+# Merge files
+*.orig
+
+#tmp directories
+tmp/
+test-output/
+
+#ignore the run time data files
+src/deploy/conf/data.conf
+src/deploy/conf/data.conf.old
+
+# Windows binaries
+*.exe
+*.dll
+
+# gedit tmp files
+*~
+
+*.versionsBackup

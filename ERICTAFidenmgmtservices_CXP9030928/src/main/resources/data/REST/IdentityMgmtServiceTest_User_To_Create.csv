@@ -1,0 +1,6 @@
+context,username,firstName,lastName,email,password,enabled,roles,authMode
+1,IdentityMgmt1_Skyfall_ComRole,com_user,com_user,test@administor.com,TestPassw0rd,true,SystemAdministrator,local
+2,IdentityMgmt2_Skyfall_ComRole,com_user,com_user,test@administor.com,TestPassw0rd,true,"SystemAdministrator,SECURITY_ADMIN",local
+3,IdentityMgmt_Skyfall_NO_ComRole,IdentityMgmt_Skyfall,IdentityMgmt_Skyfall,test@administor.com,TestPassw0rd,true,ADMINISTRATOR,local
+4,IdentityMgmt_Skyfall_Functional,IdentityMgmt_Skyfall_Functional,IdentityMgmt_Skyfall_Functional,test@administor.com,TestPassw0rd,true,"ADMINISTRATOR,Security-IdentityMgmtRole",local
+5,IdentityMgmt_Skyfall_Operator,IdentityMgmt_Skyfall_Operator,IdentityMgmt_Skyfall_Operator,test@operator.com,TestPassw0rd,true,OPERATOR,local
